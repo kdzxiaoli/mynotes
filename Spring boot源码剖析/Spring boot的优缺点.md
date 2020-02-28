@@ -1,4 +1,4 @@
-Spring Boot 的特点
+# Spring Boot 的特点
 
 1.为基于spring的开发提供更快的入门体验  
 2.创建可以独立运行的Spring应用  
@@ -9,14 +9,14 @@ Spring Boot 的特点
 7.开箱即用，没有代码生成，也无需XML配置。同时也可以修改默认值来满足特定的需求  
 8.其他大量的项目都是基于Spring boot 之上的  比如Spring cloud  
 
-Spring boot 使编码变得简单
-Spring boot 使部署变得简单
-Spring boot 使监控变得简单
-Spring boot 使配置变得简单
+Spring boot 使编码变得简单  
+Spring boot 使部署变得简单  
+Spring boot 使监控变得简单  
+Spring boot 使配置变得简单  
 
 
-Springboot的缺点
+# Springboot的缺点
 
-1.依赖太多
-2.缺少服务的注册和发现解决方案
-3.中文文档较少
+1.依赖太多  
+2.缺少服务的注册和发现解决方案  
+3.中文文档较少  
