@@ -45,14 +45,24 @@ host[0]=1
 host[1]=1  >> List or array  
 
 ## 10 动态使用配置文件
-这个类要在META-INFO/spring.factories文件里注册
-@Component
-implements EnviromentPostProcessor {
-  Properties source = new Properties();
-  source.load(input);
-  PropertiesPropertySource pps = new PropertiesPropertySource("my", source);
-  enviroment.getPropertySources().addLast(pps);
+这个类要在META-INFO/spring.factories文件里注册  
+@Component  
+implements EnviromentPostProcessor {  
+  Properties source = new Properties();  
+  source.load(input);  
+  PropertiesPropertySource pps = new PropertiesPropertySource("my", source);  
+  enviroment.getPropertySources().addLast(pps);  
 }
+
+##  11 区别环境
+application-dev or application.prod.properties  
+ConfigrableApplicationContext context = SpringbootApplication.run(App.class, args);   
+context.setAdditonalProfiles("dev")     
+
+--spring.profiles.active=test    
+
+### @Profile("dev")
+could be used in method or class
 
 
 
