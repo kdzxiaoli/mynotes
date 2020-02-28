@@ -19,6 +19,6 @@ context.getClass()
  有两个方法  第一个方法表示在依赖属性设置好后执行   第二个是在初始化完成后执行   可以实现该类处理自己的业务逻辑  
  
  #  BeanPostFactoryProcessor 
- spring 容器初始化后执行
+ spring 容器初始化后执行 只执行一次 比BeanPostProcessor早执行
  # BeanDefinitionRegistryPostProcessor
  BeanDefinitionBuilder builder = BeanDefinitionBuilder(Car.class);
