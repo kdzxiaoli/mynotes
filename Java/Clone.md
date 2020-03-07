@@ -7,6 +7,11 @@ clone()  基本数据类型+String   可以克隆
 可以在实体对象属性 事项Clonable
 
 然后在构造函数里 调用这个实体对象的clone  实现深拷贝
+如果引用属性里还有引用类型  会一直需要递归去做    
+
+可以用序列化机制来解决
+
+
 ```java
 public class Test implements Cloneable {
 
